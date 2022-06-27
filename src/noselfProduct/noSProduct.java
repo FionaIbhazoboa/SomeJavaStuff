@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 /**
  * @author fiona
- *
+ * Reference from Neetcode.io
  */
 public class noSProduct {
 	
@@ -20,7 +20,7 @@ public class noSProduct {
 	        for (int i = 0; i < nums.length; i++) {
 	            result[i] = prefix;
 	            prefix *= nums[i];
-	            System.out.println("  "+prefix);
+	            //System.out.println("  "+prefix);
 	        }
 
 	        // Perform Postfix product operation by traversing Right -> Left
@@ -28,7 +28,7 @@ public class noSProduct {
 	        for (int i = nums.length - 1; i >= 0; i--) {
 	            result[i] *= postfix;
 	            postfix *= nums[i];
-	            System.out.println(" "+result[i]);
+	            //System.out.println(" "+result[i]);
 	        }
 	        return result;
 	    }
